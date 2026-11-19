@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Violence and persecution against Jehovah’s Witnesses, 1935–1950</title>
+<style>
+/* Layout: forum board shell. Header bar, nav panel, then a two-column body (map box + filter box), topic-list of incidents, stats, footer. Single light theme by design. */
+:root{
+  --page:#f5f7fa; --panel:#ffffff; --bg1:#ecf3f7; --bg2:#e1ebf2; --navbar:#cadceb;
+  --ink:#333333; --muted:#536482; --link:#105289; --linkhover:#d31141; --line:#ccd9e6;
+  --head1:#6aceff; --head2:#0076b1; --head3:#12a3eb;
+  --aqua1:#e9f8ff; --aqua2:#9fd8f2; --sea1:#d9f1fb; --sea2:#a7d9ee;
+  --land1:#fbfdff; --land2:#e6eff6; --landline:#8fb3cc;
+  --red:#aa0000; --green:#00aa00;
+  --c1:#d61f1f; --c2:#f08a00; --c3:#7b3fc4; --c4:#1e73c9; --c5:#14a37f; --c6:#d1501b; --c7:#6f7f8f; --c8:#d12a8a; --c9:#5aa31c; --c10:#0e98b8; --c11:#9a5a12;
+  --mixed:#1b3d5c; --other:#8a96a6;
+  --body:Verdana, "Lucida Grande", Helvetica, Arial, sans-serif;
+  --display:"Trebuchet MS", "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font:12px/1.4 var(--body);padding:12px 16px 24px}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--linkhover);text-decoration:underline}
+#wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+
+/* header bar */
+.headerbar{border-radius:7px;padding:12px 16px;color:#fff;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  background:linear-gradient(180deg,var(--head1) 0%,var(--head3) 45%,var(--head2) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.45)}
+.logo{width:64px;height:64px;flex:none}
+.sitename{display:flex;flex-direction:column;gap:2px;flex:1;min-width:240px}
+.sitename h1{font:bold 22px/1.15 var(--display);margin:0;color:#fff;text-shadow:0 1px 1px rgba(0,40,80,.45)}
+.sitename p{margin:0;font-size:12px;color:#e6f6ff;font-weight:bold}
+.kicker{font:bold 10px var(--body);text-transform:uppercase;letter-spacing:.06em;color:#d3f0ff}
+.searchbox{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.searchbox .row{display:flex;gap:4px}
+.searchbox input{width:220px;height:22px;font:12px var(--body);color:#333;-webkit-text-fill-color:#333;caret-color:#333;-webkit-appearance:none;appearance:none;padding:2px 5px 2px 20px;border:1px solid #0b5f8f;border-radius:2px;background-color:#fff;
+  background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Ccircle cx='5' cy='5' r='3.5' fill='none' stroke='%23536482' stroke-width='1.5'/%3E%3Cpath d='M7.6 7.6l3 3' stroke='%23536482' stroke-width='1.6'/%3E%3C/svg%3E") 4px 50% no-repeat}
+.searchbox a{color:#fff;font-size:11px}
+.searchbox a:hover{color:#fff}
+
+/* glossy buttons */
+.btn{font:11px var(--body);color:#105289;border:1px solid #8aa9c4;border-radius:3px;padding:2px 8px;cursor:pointer;
+  background:linear-gradient(180deg,#ffffff 0%,#eef4f9 48%,#d6e6f3 52%,#e9f1f8 100%)}
+.btn:hover{border-color:#0076b1;color:#d31141}
+.btn.go{color:#1d4d06;border-color:#6ea83b;background:linear-gradient(180deg,#f4ffe9 0%,#d7f2b6 48%,#b6e27f 52%,#d7f2b6 100%)}
+
+/* nav panel */
+.navbar{border-radius:7px;padding:4px 10px;background:var(--navbar)}
+.navbar ul{list-style:none;margin:0;padding:6px 0;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.navbar .right{margin-left:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.navbar label{display:flex;gap:5px;align-items:center;cursor:pointer}
+.ico{width:14px;height:14px;vertical-align:-3px;margin-right:3px}
+select{font:11px var(--body);color:#333;border:1px solid #8aa9c4;border-radius:2px;padding:1px 2px;background:#fff}
+
+.info{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;color:var(--muted);font-size:11px;padding:0 2px}
+.links{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;font-size:11px;padding:2px 2px 0}
+.links span.dot{color:#536482}
+
+/* forum boxes */
+.forumbg{border-radius:7px;padding:5px;background:linear-gradient(180deg,var(--head3) 0,var(--head2) 34px,var(--head2) 100%)}
+.forumbg > .hd{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#fff;font:bold 10px var(--body);text-transform:uppercase;padding:4px 6px 7px;letter-spacing:.02em}
+.forumbg > .hd .sub{font-weight:normal;text-transform:none;color:#dff3ff}
+.inner{background:var(--bg1);border-radius:4px;overflow:hidden}
+.columns{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:10px;align-items:start}
+
+/* map */
+#mapwrap{position:relative;height:560px;background:linear-gradient(180deg,var(--sea1),var(--sea2))}
+svg#map{width:100%;height:100%;display:block;cursor:grab}
+svg#map:active{cursor:grabbing}
+.state{stroke:var(--landline);stroke-width:.8}
+.pin{cursor:pointer}
+.pin text{font:bold 10px var(--body);fill:#fff;pointer-events:none;text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:rgba(0,0,0,.35);stroke-width:2px}
+.pin.sel .ring{stroke:#ffde00;stroke-width:3}
+.pin:focus{outline:none}
+.pin:focus-visible .ring{stroke:#ffde00;stroke-width:3}
+.opin path{fill:var(--other);stroke:#fff;cursor:pointer}
+#zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:3px}
+#zoomctl .btn{width:28px;height:26px;padding:0;font-size:14px;font-weight:bold}
+#status{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+#legend{position:absolute;left:10px;bottom:10px;max-width:250px;background:rgba(255,255,255,.92);border:1px solid #8fb3cc;border-radius:5px;padding:6px 8px;font-size:10px;display:flex;flex-direction:column;gap:2px;box-shadow:0 1px 3px rgba(0,60,100,.2)}
+#legend .k{display:flex;gap:6px;align-items:center}
+#legend .sw{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:inset 0 2px 2px rgba(255,255,255,.6),0 0 0 1px rgba(0,0,0,.15)}
+#legend b{font-family:var(--display);color:#105289;font-size:11px}
+
+/* filters */
+.fieldset{border-bottom:1px solid #fff;padding:6px 8px}
+.fieldset:last-child{border-bottom:0}
+.fieldset:nth-child(odd){background:var(--bg2)}
+details summary{cursor:pointer;font:bold 11px var(--display);color:#105289;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"[+]";color:#536482;font:10px var(--body)}
+details[open] summary::after{content:"[–]"}
+.opts{display:flex;flex-direction:column;gap:2px;margin-top:5px}
+.opts label{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:11px}
+.opts label .n{margin-left:auto;color:var(--muted);font-size:10px}
+.opts input{margin:0}
+.mini{display:flex;gap:6px;margin-top:5px}
+.countbar{padding:8px;font-size:11px;color:var(--muted);background:#fff;border-bottom:1px solid var(--line)}
+.countbar b{color:#000;font-size:12px}
+
+/* topic list */
+table.topiclist{width:100%;border-collapse:collapse;font-size:11px}
+table.topiclist thead th{color:#fff;font:bold 10px var(--body);text-transform:uppercase;text-align:left;padding:3px 6px;background:transparent}
+.listbox{max-height:520px;overflow-y:auto;background:var(--bg1);border-radius:4px}
+table.topiclist tbody tr{cursor:pointer}
+table.topiclist tbody tr:nth-child(odd){background:var(--bg1)}
+table.topiclist tbody tr:nth-child(even){background:var(--bg2)}
+table.topiclist tbody tr:hover{background:#f6f4d0}
+table.topiclist td{padding:5px 6px;border-bottom:1px solid #fff;vertical-align:top}
+table.topiclist td.c{border-left:1px solid #fff;text-align:center;white-space:nowrap;color:#4c5d77}
+.topictitle{font:bold 12px var(--display);color:#105289}
+tr:hover .topictitle{color:#d31141}
+.topicicon{width:18px;height:18px;border-radius:50%;display:inline-block;vertical-align:-4px;margin-right:6px;
+  box-shadow:inset 0 3px 3px rgba(255,255,255,.65),inset 0 -2px 3px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.2)}
+.desc{color:#4c5d77;font-size:10px;margin-left:24px}
+
+/* stats */
+.section h3{font:bold 11px var(--display);text-transform:uppercase;color:#115098;border-bottom:1px solid #ccc;margin:10px 0 4px;padding-bottom:2px}
+.section p{margin:0 0 3px;color:#333;font-size:11px}
+.section .u-red{color:var(--red);font-weight:bold}
+.section .u-green{color:var(--green);font-weight:bold}
+
+.footer{border-radius:7px;background:var(--navbar);padding:7px 10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:11px}
+.copyright{text-align:center;color:#555;font-size:10px;padding:4px}
+
+/* post viewer */
+#overlay{position:fixed;inset:0;background:rgba(10,40,70,.35);display:none;align-items:flex-start;justify-content:center;padding:40px 16px;z-index:10;overflow-y:auto}
+#overlay.open{display:flex}
+#viewer{width:min(820px,100%);background:#fff;border-radius:7px;padding:6px;box-shadow:0 6px 24px rgba(0,40,80,.35)}
+#viewer .vt{border-radius:5px;padding:7px 10px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px;
+  background:linear-gradient(180deg,var(--head1),var(--head3) 45%,var(--head2))}
+#viewer .vt h2{margin:0;font:bold 15px var(--display);text-shadow:0 1px 1px rgba(0,40,80,.4)}
+#viewer .crumbline{font-size:11px;color:var(--muted);padding:6px 4px}
+.post{border-radius:7px;padding:8px 10px;margin-top:6px;display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:12px}
+.post.bg1{background:var(--bg1)} .post.bg2{background:var(--bg2)}
+.postbody h3{margin:0 0 2px;font:bold 13px var(--display);color:#105289}
+.author{font-size:10px;color:#4c5d77;margin-bottom:6px;border-bottom:1px solid #fff;padding-bottom:4px}
+.content{font-size:12px;line-height:1.5;max-width:65ch}
+.content p{margin:0 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
+.chip{font-size:10px;padding:1px 6px;border-radius:9px;color:#fff;box-shadow:inset 0 2px 2px rgba(255,255,255,.45)}
+.signature{border-top:1px solid #ccc;margin-top:8px;padding-top:4px;font-size:10px;color:#666;font-style:italic}
+.postprofile{border-left:1px solid #fff;padding-left:10px;font-size:10px;color:#4c5d77;display:flex;flex-direction:column;gap:3px}
+.postprofile .avatar{width:56px;height:56px;border-radius:50%;margin-bottom:4px;display:flex;align-items:center;justify-content:center;color:#fff;font:bold 13px var(--display);text-shadow:0 1px 1px rgba(0,0,0,.4);box-shadow:inset 0 6px 8px rgba(255,255,255,.7),inset 0 -4px 6px rgba(0,0,0,.2),0 1px 2px rgba(0,0,0,.25)}
+.postprofile b{color:#000}
+.postprofile .rank{color:var(--red);font-weight:bold;font-size:11px}
+
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:2px dotted #d31141;outline-offset:1px}
+@media (max-width:860px){
+  .columns{grid-template-columns:1fr}
+  #mapwrap{height:420px}
+  .post{grid-template-columns:1fr}
+  .postprofile{border-left:0;border-top:1px solid #fff;padding:6px 0 0}
+  .searchbox{align-items:flex-start}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div class="headerbar">
+    <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <radialGradient id="lg1" cx="40%" cy="30%" r="75%"><stop offset="0" stop-color="#e9fbff"/><stop offset=".5" stop-color="#57c2f0"/><stop offset="1" stop-color="#0a5f96"/></radialGradient>
+        <linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      </defs>
+      <circle cx="32" cy="32" r="28" fill="url(#lg1)" stroke="#fff" stroke-width="2"/>
+      <path d="M14 30c5-6 12-8 18-6s9 7 15 4 4 8-2 12-15 4-20 0-12-4-11-10z" fill="#7fd46a" opacity=".9"/>
+      <path d="M32 14c-6 0-11 5-11 11 0 8 11 21 11 21s11-13 11-21c0-6-5-11-11-11z" fill="#d61f1f" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="32" cy="25" r="4" fill="#fff"/>
+      <ellipse cx="28" cy="16" rx="18" ry="10" fill="url(#lg2)"/>
+    </svg>
+    <div class="sitename">
+      <span class="kicker">History 4245 · Nazi Germany and the Holocaust</span>
+      <h1>Violence and persecution against Jehovah’s Witnesses, 1935–1950</h1>
+      <p>Milo Hathaway</p>
+    </div>
+    <div class="searchbox">
+      <div class="row"><input id="q" type="search" placeholder="Search…" aria-label="Search incidents"><button class="btn" id="qgo" type="button">Search</button></div>
+      <a href="#filters-box" id="adv">Advanced search</a>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><label for="colorby">Color pins by</label>
+        <select id="colorby">
+          <option value="cat">Type of violence</option>
+          <option value="legion">American Legion / veterans</option>
+          <option value="police">Police / officials’ role</option>
+          <option value="flag">Flag salute cited</option>
+          <option value="year">Year</option>
+          <option value="src">Source document</option>
+        </select></li>
+      <li><label><input type="checkbox" id="showOther"> Show other (non-Witness) cases</label></li>
+      <li class="right">
+        <a href="#sources">Sources</a>
+        <a href="#stats">Statistics</a>
+        <button class="btn go" type="button" id="resetAll">Reset filters</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="info"><span>It is currently <span id="now"></span></span><span>Map data last updated: Nov 18, 2026</span></div>
+  <div class="links">
+    <span><a href="#" id="viewAll">View all incidents</a> <span class="dot">•</span> <a href="#" id="viewViolent">View physical assaults</a> <span class="dot">•</span> <a href="#" id="viewLegion">View Legion incidents</a> <span class="dot">•</span> <a href="#" id="viewUnlocated">View unlocated incidents</a></span>
+    <span id="count"></span>
+  </div>
+
+  <div class="columns">
+    <div class="forumbg">
+      <div class="hd"><span>Incident map</span><span class="sub">Drag to pan · scroll or use +/− to zoom · click a pin to read</span></div>
+      <div class="inner">
+        <div id="mapwrap">
+          <svg id="map" role="img" aria-label="Map of the United States with incident pins"></svg>
+          <div id="status">Loading map…</div>
+          <div id="zoomctl"><button class="btn" id="zin" aria-label="Zoom in">+</button><button class="btn" id="zout" aria-label="Zoom out">−</button><button class="btn" id="zreset" aria-label="Reset view">⌂</button></div>
+          <div id="legend" aria-label="Legend"></div>
+        </div>
+      </div>
+    </div>
+    <div class="forumbg" id="filters-box">
+      <div class="hd"><span>Filter incidents</span></div>
+      <div class="inner" id="filters"></div>
+    </div>
+  </div>
+
+  <div class="forumbg">
+    <table class="topiclist" aria-hidden="true"><thead><tr><th>Incidents shown</th><th style="width:150px">Date</th><th style="width:60px;text-align:center">State</th><th style="width:150px;text-align:center">Source</th></tr></thead></table>
+    <div class="listbox"><table class="topiclist"><tbody id="items"></tbody></table></div>
+  </div>
+
+  <div class="section" id="stats">
+    <h3>Statistics</h3>
+    <p id="statline"></p>
+    <p id="statline2"></p>
+    <h3 id="sources">Sources</h3>
+    <p>“Mass violence against Jehovah’s Witnesses, 1940–1942,” in <i>Religious Persecution and Political Order in the United States</i> (Cambridge, 2015) <span class="dot">•</span> American Civil Liberties Union, <i>The Persecution of Jehovah’s Witnesses</i> (1941) <span class="dot">•</span> Shawn Francis Peters, <i>Judging Jehovah’s Witnesses</i> (University Press of Kansas, 2000) <span class="dot">•</span> Rebekah Huss Fox, “Johnson v. State,” in <i>First Amendment Studies in Arkansas</i> (University of Arkansas Press, 2016)</p>
+    <p><i>Legend:</i> <span class="u-red">Exact town / site</span>, <span class="u-green">Approximate or county-level</span> · Coordinates are town centers; county-level reports are plotted at the county seat.</p>
+  </div>
+
+  <div class="footer"><span><a href="#" id="home2">▲ Back to top</a></span><span><a href="#sources">The sources</a> <span class="dot">•</span> <a href="#" id="resetAll2">Reset all filters</a> <span class="dot">•</span> All dates as given in sources</span></div>
+  <div class="copyright">Milo Hathaway · History 4245: Nazi Germany and the Holocaust · Powered by D3.js &amp; us-atlas · Best viewed at 1024×768</div>
+</div>
+
+<div id="overlay" role="dialog" aria-modal="true" aria-labelledby="vtitle"><div id="viewer"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const GROUPS = [
+  {key:"_cats", label:"Type of violence / persecution", multi:true, order:["Physical assault","Mob action","Property attack","Arrest / detention","Expulsion / banishment","Threats / intimidation","Official / legal action","Children / schools","Employment / relief","Draft / military","Press / incitement"]},
+  {key:"_legion", label:"American Legion / veterans", order:["Involved","Invoked / indirect","No (other group)","Not stated"]},
+  {key:"_police", label:"Police / officials’ role", multi:true, order:["Police / officials took part","Refused / failed to protect","Prosecution / courts","Military","None stated / N/A"]},
+  {key:"_flag", label:"Flag salute cited", order:["Yes","Implied","Not stated"]},
+  {key:"_year", label:"Year", order:["1935","1936","1938","1939","1940","1941","1942","1943","1944","1946","1950","Undated"]},
+  {key:"State", label:"State"},
+  {key:"_src", label:"Source document", order:["2015 chapter","ACLU pamphlet (1941)","Peters (2000)","Arkansas essays (2016)"]},
+  {key:"_prec", label:"Location precision", order:["Exact town / site","Approximate","State-level","Inferred","Unlocated"]},
+];
+const PALETTE = ["--c1","--c2","--c3","--c4","--c5","--c6","--c7","--c8","--c9","--c10","--c11"];
+const COLOR_KEYS = {cat:"_cats", legion:"_legion", police:"_police", flag:"_flag", year:"_year", src:"_src"};
+const CAT_PRIORITY = GROUPS[0].order;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+let DATA, OTHER, sel = {}, colorBy = "cat", projection, zoom, gMap, gPins, gOther, svg, currentK = 1, selectedKey = null, defs;
+
+function primary(rec, key){
+  const v = rec[key];
+  if (key === "_cats") return CAT_PRIORITY.find(c => v.includes(c)) || v[0];
+  if (key === "_police") return ["Police / officials took part","Refused / failed to protect","Military","Prosecution / courts","None stated / N/A"].find(c => v.includes(c));
+  return v;
+}
+function colorFor(key, value){
+  const g = GROUPS.find(g => g.key === key);
+  const i = g.order.indexOf(value);
+  if (["Not stated","None stated / N/A","Undated"].includes(value)) return css("--c7");
+  return css(PALETTE[i % PALETTE.length]);
+}
+function values(rec, key){ const v = rec[key]; return Array.isArray(v) ? v : [v]; }
+
+/* glossy radial gradient per color, created on demand */
+const gradCache = new Map();
+function gloss(color){
+  if (gradCache.has(color)) return gradCache.get(color);
+  const id = "g" + gradCache.size;
+  const g = defs.append("radialGradient").attr("id", id).attr("cx", "35%").attr("cy", "30%").attr("r", "75%");
+  g.append("stop").attr("offset", "0").attr("stop-color", d3.color(color).brighter(1.6));
+  g.append("stop").attr("offset", ".45").attr("stop-color", color);
+  g.append("stop").attr("offset", "1").attr("stop-color", d3.color(color).darker(.9));
+  gradCache.set(color, `url(#${id})`);
+  return gradCache.get(color);
+}
+
+function buildFilters(){
+  const box = document.getElementById("filters");
+  box.innerHTML = `<div class="countbar" id="count2"></div>`;
+  GROUPS.forEach((g, gi) => {
+    let opts = g.order;
+    if (!opts){ opts = [...new Set(DATA.map(d => d[g.key] || "—"))].sort(); g.order = opts; }
+    const counts = {}; DATA.forEach(d => values(d, g.key).forEach(v => { v = v || "—"; counts[v] = (counts[v]||0) + 1; }));
+    opts = opts.filter(o => counts[o]);
+    sel[g.key] = new Set(opts);
+    const wrap = document.createElement("div"); wrap.className = "fieldset";
+    const det = document.createElement("details"); if (gi < 3) det.open = true;
+    det.innerHTML = `<summary>${esc(g.label)}</summary><div class="opts">${opts.map((o, i) =>
+      `<label><input type="checkbox" id="f${gi}_${i}" data-k="${esc(g.key)}" value="${esc(o)}" checked> ${esc(o)} <span class="n">(${counts[o]})</span></label>`).join("")}</div>
+      <div class="mini"><button class="btn" type="button" data-all="${esc(g.key)}">Select all</button><button class="btn" type="button" data-none="${esc(g.key)}">Clear</button></div>`;
+    wrap.appendChild(det); box.appendChild(wrap);
+  });
+  box.addEventListener("change", e => {
+    const t = e.target; if (!t.dataset.k) return;
+    t.checked ? sel[t.dataset.k].add(t.value) : sel[t.dataset.k].delete(t.value); update();
+  });
+  box.addEventListener("click", e => {
+    const k = e.target.dataset.all || e.target.dataset.none; if (!k) return;
+    setGroup(k, !!e.target.dataset.all); update();
+  });
+}
+function setGroup(k, on, only){
+  document.querySelectorAll(`#filters input[data-k="${CSS.escape(k)}"]`).forEach(i => {
+    const v = only ? only.includes(i.value) : on;
+    i.checked = v; v ? sel[k].add(i.value) : sel[k].delete(i.value);
+  });
+}
+function resetAll(){
+  GROUPS.forEach(g => setGroup(g.key, true));
+  document.getElementById("q").value = "";
+  update();
+}
+
+function filtered(){
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  return DATA.filter(d => GROUPS.every(g => values(d, g.key).some(v => sel[g.key].has(v || "—")))
+    && (!q || Object.entries(d).some(([k, v]) => !k.startsWith("_") && String(v).toLowerCase().includes(q))));
+}
+
+function groupByPlace(recs){
+  const m = new Map();
+  recs.forEach(d => {
+    if (d.Latitude == null || d.Longitude == null) return;
+    const key = d.Latitude.toFixed(3) + "," + d.Longitude.toFixed(3);
+    if (!m.has(key)) m.set(key, {key, lat:d.Latitude, lon:d.Longitude, recs:[]});
+    m.get(key).recs.push(d);
+  });
+  return [...m.values()];
+}
+const radius = n => 5 + Math.sqrt(n) * 3.2;
+
+function update(){
+  const recs = filtered();
+  const onMap = recs.filter(d => d.Latitude != null).length;
+  const countHTML = `Showing <b>${recs.length}</b> of ${DATA.length} incidents · ${onMap} on map`;
+  document.getElementById("count").innerHTML = countHTML;
+  const c2 = document.getElementById("count2"); if (c2) c2.innerHTML = countHTML;
+  const key = COLOR_KEYS[colorBy];
+  const groups = groupByPlace(recs);
+  groups.forEach(g => {
+    const cs = new Set(g.recs.map(r => primary(r, key)));
+    g.mixed = cs.size > 1; g.color = g.mixed ? css("--mixed") : colorFor(key, [...cs][0]);
+  });
+  groups.sort((a, b) => b.recs.length - a.recs.length);
+  const k = currentK;
+  const s = gPins.selectAll("g.pin").data(groups, d => d.key);
+  s.exit().remove();
+  const ent = s.enter().append("g").attr("class", "pin").attr("tabindex", 0).attr("role", "button")
+    .on("click", (e, d) => openPlace(d)).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openPlace(d); } });
+  ent.append("circle").attr("class", "shadow");
+  ent.append("circle").attr("class", "ball");
+  ent.append("ellipse").attr("class", "shine");
+  ent.append("circle").attr("class", "ring");
+  ent.append("text"); ent.append("title");
+  const all = ent.merge(s);
+  all.attr("transform", d => { const p = projection([d.lon, d.lat]); return p ? `translate(${p[0]},${p[1]})` : "translate(-999,-999)"; })
+    .classed("sel", d => d.key === selectedKey)
+    .attr("aria-label", d => `${placeName(d)}, ${d.recs.length} incident${d.recs.length > 1 ? "s" : ""}`);
+  all.select(".shadow").attr("r", d => radius(d.recs.length) / k).attr("cy", 1.5 / k).attr("fill", "rgba(0,40,70,.28)");
+  all.select(".ball").attr("r", d => radius(d.recs.length) / k).attr("fill", d => gloss(d.color));
+  all.select(".shine").attr("cx", d => -radius(d.recs.length) * .12 / k).attr("cy", d => -radius(d.recs.length) * .42 / k)
+    .attr("rx", d => radius(d.recs.length) * .62 / k).attr("ry", d => radius(d.recs.length) * .38 / k).attr("fill", "rgba(255,255,255,.55)").attr("pointer-events", "none");
+  all.select(".ring").attr("r", d => radius(d.recs.length) / k).attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 1.4 / k);
+  all.select("text").text(d => d.recs.length > 1 ? d.recs.length : "").style("font-size", (10 / k) + "px").style("stroke-width", (2 / k) + "px");
+  all.select("title").text(d => `${placeName(d)}: ${d.recs.length} incident${d.recs.length > 1 ? "s" : ""}`);
+
+  const showOther = document.getElementById("showOther").checked;
+  const og = gOther.selectAll("g.opin").data(showOther ? OTHER : [], d => d.ID);
+  og.exit().remove();
+  const oe = og.enter().append("g").attr("class", "opin").on("click", (e, d) => openOther(d));
+  oe.append("path"); oe.append("title");
+  oe.merge(og).attr("transform", d => { const p = projection([d.Longitude, d.Latitude]); return p ? `translate(${p[0]},${p[1]})` : "translate(-999,-999)"; })
+    .select("path").attr("d", () => { const z = 7 / k; return `M0,${-z}L${z},0L0,${z}L${-z},0Z`; }).attr("stroke-width", 1.2 / k);
+  oe.merge(og).select("title").text(d => `${d.Place}: ${d["Type of violence"]} (${d["Date (as given)"]})`);
+
+  drawLegend(groups.some(g => g.mixed), showOther);
+  drawList(recs);
+  drawStats(recs);
+}
+const placeName = g => { const r = g.recs[0]; return `${r.Place.split(" (")[0]}${r.State ? ", " + r.State : ""}`; };
+
+function drawLegend(hasMixed, showOther){
+  const key = COLOR_KEYS[colorBy];
+  const g = GROUPS.find(g => g.key === key);
+  const vals = g.order.filter(o => DATA.some(d => primary(d, key) === o));
+  let h = `<b>${esc(g.label)}</b>` + vals.map(v => `<div class="k"><span class="sw" style="background:${colorFor(key, v)}"></span>${esc(v)}</div>`).join("");
+  if (hasMixed) h += `<div class="k"><span class="sw" style="background:${css("--mixed")}"></span>Several kinds at one place</div>`;
+  if (showOther) h += `<div class="k"><svg width="10" height="10" viewBox="-6 -6 12 12"><path d="M0,-5L5,0L0,5L-5,0Z" fill="${css("--other")}"/></svg>Other case cited (non-Witness)</div>`;
+  h += `<div class="k" style="color:#536482;margin-top:3px">Number = incidents at one place.</div>`;
+  document.getElementById("legend").innerHTML = h;
+}
+
+function drawList(recs){
+  const key = COLOR_KEYS[colorBy];
+  document.getElementById("items").innerHTML = recs.map(d => `<tr data-id="${esc(d.ID)}" tabindex="0">
+      <td><span class="topicicon" style="background:${colorFor(key, primary(d, key))}"></span><span class="topictitle">${esc(d["Type of violence / persecution"])}</span>
+        <div class="desc">${esc(d.ID)} » in <b>${esc(d.Place)}</b>${d.Latitude == null ? " · <i>not on map</i>" : ""}</div></td>
+      <td class="c" style="width:150px">${esc(d["Date (as given)"])}</td>
+      <td class="c" style="width:60px">${esc(d.State || "—")}</td>
+      <td class="c" style="width:150px">${esc(d._src)}</td></tr>`).join("")
+    || `<tr><td colspan="4" style="padding:12px;text-align:center">No incidents match these filters. <a href="#" onclick="resetAll();return false">Reset filters</a></td></tr>`;
+}
+function openFromRow(tr){
+  const d = DATA.find(x => x.ID === tr.dataset.id);
+  if (d.Latitude == null){ openRecords([d], d.Place); return; }
+  const key = d.Latitude.toFixed(3) + "," + d.Longitude.toFixed(3);
+  const g = groupByPlace(filtered()).find(g => g.key === key);
+  flyTo(d.Longitude, d.Latitude);
+  openPlace(g, d.ID);
+}
+document.getElementById("items").addEventListener("click", e => { const tr = e.target.closest("tr[data-id]"); if (tr) openFromRow(tr); });
+document.getElementById("items").addEventListener("keydown", e => { const tr = e.target.closest("tr[data-id]"); if (tr && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); openFromRow(tr); } });
+
+function drawStats(recs){
+  const n = (f) => recs.filter(f).length;
+  const states = new Set(recs.map(d => d.State).filter(Boolean)).size;
+  const places = groupByPlace(recs).length;
+  document.getElementById("statline").innerHTML =
+    `Incidents shown <b>${recs.length}</b> • Places <b>${places}</b> • States <b>${states}</b> • Physical assaults <b>${n(d => d._cats.includes("Physical assault"))}</b> • Mob actions <b>${n(d => d._cats.includes("Mob action"))}</b>`;
+  document.getElementById("statline2").innerHTML =
+    `Legion or veterans involved <b>${n(d => d._legion === "Involved")}</b> • Police or officials took part <b>${n(d => d._police.includes("Police / officials took part"))}</b> • Protection refused <b>${n(d => d._police.includes("Refused / failed to protect"))}</b> • Flag salute cited <b>${n(d => d._flag === "Yes")}</b>`;
+}
+
+const SRCINIT = {"2015 chapter":"2015","ACLU pamphlet (1941)":"ACLU","Peters (2000)":"SFP","Arkansas essays (2016)":"ARK"};
+const SRCCOLOR = {"2015 chapter":"--c4","ACLU pamphlet (1941)":"--c5","Peters (2000)":"--c3","Arkansas essays (2016)":"--c6"};
+function post(d, i){
+  const row = (k, v) => v && v !== "Not stated" ? `<div><b>${esc(k)}:</b> ${esc(v)}</div>` : "";
+  return `<div class="post ${i % 2 ? "bg2" : "bg1"}" id="card-${esc(d.ID)}">
+    <div class="postbody">
+      <h3>${esc(d["Type of violence / persecution"])}</h3>
+      <div class="author">${esc(d.ID)} » <b>${esc(d["Date (as given)"])}</b> · ${esc(d.Place)}${d.State ? ", " + esc(d.State) : ""}</div>
+      <div class="content"><p>${esc(d.Description)}</p>
+        <div class="chips">${d._cats.map(c => `<span class="chip" style="background:${colorFor("_cats", c)}">${esc(c)}</span>`).join("")}</div>
+        ${row("Perpetrators", d.Perpetrators)}${row("Police / officials", d["Law enforcement role"])}${row("Flag salute", d["Flag salute cited"])}
+      </div>
+      ${d.Notes ? `<div class="signature">${esc(d.Notes)}</div>` : ""}
+    </div>
+    <div class="postprofile">
+      <span class="avatar" style="background:${css(SRCCOLOR[d._src] || "--c7")}">${esc(SRCINIT[d._src] || "?")}</span>
+      <span class="rank">${esc(d._src)}</span>
+      ${row("Cited", d["Source cited in text"])}${row("Pages", d["Page(s)"])}${row("Legion / veterans", d["American Legion / veterans involved"])}${row("Location", d["Geocode precision"])}
+    </div></div>`;
+}
+function openRecords(recs, title, focusId){
+  const v = document.getElementById("viewer");
+  v.innerHTML = `<div class="vt"><h2 id="vtitle">${esc(title)}</h2><button class="btn" type="button" id="vclose">Close [x]</button></div>
+    <div class="crumbline"><b>${recs.length}</b> incident${recs.length > 1 ? "s" : ""} at this place</div>
+    ${recs.map(post).join("")}`;
+  document.getElementById("overlay").classList.add("open");
+  document.getElementById("vclose").onclick = closeViewer;
+  document.getElementById("vclose").focus();
+  if (focusId){ const c = document.getElementById("card-" + focusId); if (c) c.scrollIntoView({block:"start"}); } else document.getElementById("overlay").scrollTop = 0;
+}
+function openPlace(g, focusId){
+  selectedKey = g.key; gPins.selectAll("g.pin").classed("sel", d => d.key === selectedKey);
+  openRecords(g.recs, placeName(g), focusId);
+}
+function openOther(d){
+  const row = (k, v) => v ? `<div><b>${esc(k)}:</b> ${esc(v)}</div>` : "";
+  const v = document.getElementById("viewer");
+  v.innerHTML = `<div class="vt"><h2 id="vtitle">${esc(d.Place)}${d.State ? ", " + esc(d.State) : ""}</h2><button class="btn" type="button" id="vclose">Close [x]</button></div>
+    <div class="crumbline">Other case cited in the 2015 chapter (not an incident against Witnesses)</div>
+    <div class="post bg1"><div class="postbody"><h3>${esc(d["Type of violence"])}</h3><div class="author">${esc(d.ID)} » <b>${esc(d["Date (as given)"])}</b></div>
+      <div class="content"><p>${esc(d.Description)}</p>${row("Perpetrators", d.Perpetrators)}${row("Targets", d.Targets)}</div>
+      ${d.Notes ? `<div class="signature">${esc(d.Notes)}</div>` : ""}</div>
+      <div class="postprofile"><span class="avatar" style="background:${css("--other")}"></span><span class="rank">Other case cited</span>${row("Cited", d["Source cited in text"])}${row("Pages", d["Page(s)"])}${row("Location", d["Geocode precision"])}</div></div>`;
+  document.getElementById("overlay").classList.add("open");
+  document.getElementById("vclose").onclick = closeViewer;
+  document.getElementById("vclose").focus();
+}
+function closeViewer(){ document.getElementById("overlay").classList.remove("open"); selectedKey = null; gPins && gPins.selectAll("g.pin").classed("sel", false); }
+document.getElementById("overlay").addEventListener("click", e => { if (e.target.id === "overlay") closeViewer(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeViewer(); });
+
+function flyTo(lon, lat){
+  const p = projection([lon, lat]); if (!p) return;
+  const {width, height} = svg.node().getBoundingClientRect();
+  const k = Math.max(currentK, 4);
+  svg.transition().duration(matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 600)
+    .call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(k).translate(-p[0], -p[1]));
+}
+
+function eraDate(){
+  const d = new Date(), D = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"], M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  let h = d.getHours(); const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12;
+  return `${D[d.getDay()]} ${M[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()} ${h}:${String(d.getMinutes()).padStart(2, "0")} ${ap}`;
+}
+
+async function init(){
+  const tick = () => { document.getElementById("now").textContent = eraDate(); };
+  tick(); setInterval(tick, 1000);
+  let states;
+  try {
+    [states, {incidents: DATA, other: OTHER}] = await Promise.all([fetch("states.json").then(r => r.json()), fetch("data.json").then(r => r.json())]);
+  } catch (err){
+    document.getElementById("status").textContent = "The map data couldn't load. Reload the page to try again."; return;
+  }
+  document.getElementById("status").remove();
+  svg = d3.select("#map");
+  defs = svg.append("defs");
+  const land = defs.append("linearGradient").attr("id", "land").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 1);
+  land.append("stop").attr("offset", 0).attr("stop-color", css("--land1"));
+  land.append("stop").attr("offset", 1).attr("stop-color", css("--land2"));
+  const geo = topojson.feature(states, states.objects.states);
+  const {width, height} = svg.node().getBoundingClientRect();
+  projection = d3.geoAlbersUsa().fitExtent([[20, 20], [width - 20, height - 20]], geo);
+  const path = d3.geoPath(projection);
+  const root = svg.append("g");
+  gMap = root.append("g");
+  gMap.selectAll("path").data(geo.features).join("path").attr("class", "state").attr("d", path).attr("fill", "url(#land)");
+  gOther = root.append("g"); gPins = root.append("g");
+  zoom = d3.zoom().scaleExtent([1, 40]).on("zoom", e => {
+    root.attr("transform", e.transform);
+    gMap.selectAll("path").attr("stroke-width", .8 / e.transform.k);
+    if (Math.abs(e.transform.k - currentK) > 1e-3){ currentK = e.transform.k; update(); }
+  });
+  svg.call(zoom).on("dblclick.zoom", null);
+  document.getElementById("zin").onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1.8);
+  document.getElementById("zout").onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.8);
+  document.getElementById("zreset").onclick = () => svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+  buildFilters();
+  const q = document.getElementById("q");
+  q.addEventListener("input", update);
+  q.addEventListener("keydown", e => { if (e.key === "Enter") update(); });
+  document.getElementById("qgo").onclick = update;
+  document.getElementById("adv").onclick = e => { e.preventDefault(); const b = document.getElementById("filters-box"); b.scrollIntoView({block:"start"}); b.querySelectorAll("details").forEach(d => d.open = true); };
+  document.getElementById("colorby").addEventListener("change", e => { colorBy = e.target.value; update(); });
+  document.getElementById("showOther").addEventListener("change", update);
+  const nav = (id, fn) => document.getElementById(id).addEventListener("click", e => { e.preventDefault(); fn(); });
+  nav("resetAll", resetAll); nav("resetAll2", resetAll); nav("viewAll", resetAll);
+  nav("home2", () => window.scrollTo(0, 0));
+  nav("viewViolent", () => { GROUPS.forEach(g => setGroup(g.key, true)); setGroup("_cats", false, ["Physical assault"]); update(); });
+  nav("viewLegion", () => { GROUPS.forEach(g => setGroup(g.key, true)); setGroup("_legion", false, ["Involved","Invoked / indirect"]); update(); });
+  nav("viewUnlocated", () => { GROUPS.forEach(g => setGroup(g.key, true)); setGroup("_prec", false, ["Unlocated"]); update(); document.getElementById("items").scrollIntoView({block:"nearest"}); });
+  update();
+  let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => {
+    const {width, height} = svg.node().getBoundingClientRect();
+    projection.fitExtent([[20, 20], [width - 20, height - 20]], geo);
+    gMap.selectAll("path").attr("d", path); update();
+  }, 150); });
+}
+init();
+</script>
+</body>
+</html>
